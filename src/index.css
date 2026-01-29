@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-primary: #722F37;
+  /* Merlot/Maroon */
+  --color-secondary: #C5A065;
+  /* Gold/Beige */
+  --color-secondary-light: #F9F5EF;
+  /* Light Beige Background */
+  --color-accent: #2E5C31;
+  /* Green for badges */
+  --color-text-dark: #2A2A2A;
+  --color-text-light: #FFFFFF;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-dark);
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
+
+/* Custom Utilities if needed */
+.text-outline {
+  -webkit-text-stroke: 1px currentColor;
+  color: transparent;
+}
