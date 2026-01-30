@@ -72,7 +72,7 @@ const Footer = () => {
 
           {/* Address */}
           <div className="flex items-center gap-2 mb-3 ">
-            <MapPin className="w-4 h-6 text-white flex-shrink-0" />
+            <MapPin className="w-4 h-6 text-white " />
             <p className="text-white text-sm font-poppins leading-relaxed ">
               123, Rice Market, Grain Street, Ahmedabad – 380001
             </p>
@@ -80,7 +80,7 @@ const Footer = () => {
 
           {/* Email */}
           <div className="flex items-center gap-3 mb-3">
-            <Mail className="w-4 h-4 text-white flex-shrink-0" />
+            <Mail className="w-4 h-4 text-white " />
             <p className="text-white text-sm font-poppins">
               <span className="font-semibold">Email:</span> info@familyfeast.com
             </p>
@@ -88,13 +88,12 @@ const Footer = () => {
 
           {/* Phone */}
           <div className="flex items-center gap-3">
-            <Phone className="w-4 h-4 text-white flex-shrink-0" />
+            <Phone className="w-4 h-4 text-white" />
             <p className="text-white text-sm font-poppins">
               <span className="font-semibold">Phone:</span> +91 98765 43210
             </p>
           </div>
         </div>
-
 
 
       </div>
