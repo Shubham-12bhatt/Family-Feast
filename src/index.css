@@ -2,8 +2,8 @@
    IMPORTS (MUST BE FIRST)
 ======================= */
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap'); */
 
 /* =======================
    3D FLIP HELPERS
@@ -85,4 +85,41 @@ h6 {
 
 .bg-feature-light {
   background-color: rgba(122, 46, 69, 0.37);
+}
+
+
+/* =======================
+   FEATURE TYPOGRAPHY TUNING
+======================= */
+
+/* Main heading: What Sets Us Apart */
+.feature-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;          /* thoda bold */
+  letter-spacing: -0.5px;    /* modern tight look */
+  color: #7A2E45;
+}
+
+/* Subtitle */
+.feature-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #111;
+}
+
+/* Card title */
+.feature-card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;          /* yahin se thickness aati hai */
+  font-size: 1.4rem;
+  color: #000;
+}
+
+/* Card description */
+.feature-card-desc {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.6;
 }
