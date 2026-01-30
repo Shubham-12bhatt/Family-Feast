@@ -71,8 +71,8 @@ const Footer = () => {
           </h4>
 
           {/* Address */}
-          <div className="flex items-center gap-2 mb-3 ">
-            <MapPin className="w-4 h-6 text-white " />
+          <div className="flex items-center gap-2.5 mb-3 ">
+            <MapPin className="w-8 h-8 text-white " />
             <p className="text-white text-sm font-poppins leading-relaxed ">
               123, Rice Market, Grain Street, Ahmedabad – 380001
             </p>
