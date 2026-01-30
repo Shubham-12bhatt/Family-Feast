@@ -2,8 +2,9 @@
    IMPORTS (MUST BE FIRST)
 ======================= */
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap'); */
 
 /* =======================
    3D FLIP HELPERS
@@ -25,6 +26,14 @@
   transform: rotateY(180deg);
 }
 
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik{
+  font-family: "Rubik", sans-serif;
+}
 /* =======================
    THEME (UNCHANGED)
 ======================= */
@@ -45,22 +54,14 @@
    GLOBAL FONTS (UNCHANGED)
 ======================= */
 body {
-  font-family: var(--font-sans);
+  font-family: "Poppins", sans-serif;
   color: var(--color-text-dark);
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-serif);
-}
-
+/* 
 /* NAVBAR FONT */
 .font-oswald {
   font-family: var(--font-oswald);
