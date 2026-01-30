@@ -2,8 +2,12 @@
    IMPORTS (MUST BE FIRST)
 ======================= */
 @import "tailwindcss";
-/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap'); */
+
+.miniver-regular {
+  font-family: "Miniver", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* =======================
    3D FLIP HELPERS
@@ -95,8 +99,10 @@ h6 {
 /* Main heading: What Sets Us Apart */
 .feature-title {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;          /* thoda bold */
-  letter-spacing: -0.5px;    /* modern tight look */
+  font-weight: 700;
+  /* thoda bold */
+  letter-spacing: -0.5px;
+  /* modern tight look */
   color: #7A2E45;
 }
 
@@ -111,7 +117,8 @@ h6 {
 /* Card title */
 .feature-card-title {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;          /* yahin se thickness aati hai */
+  font-weight: 600;
+  /* yahin se thickness aati hai */
   font-size: 1.4rem;
   color: #000;
 }
