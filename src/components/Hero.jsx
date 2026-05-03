@@ -1,4 +1,4 @@
-import { Award ,Globe,Shield} from 'lucide-react';
+import { Award, Globe, Shield } from 'lucide-react';
 import heroImg from '../assets/Hero Section Image.png';
 
 
@@ -18,7 +18,7 @@ export default function Hero() {
             {/* Quality Badges */}
             <div className="flex flex-wrap gap-4 mb-8">
               <div className="inline-flex items-center px-5 bg-white rounded-full shadow-md border border-[#65BA34]">
-                <span className='text-yellow-500'><Award/></span>
+                <span className='text-yellow-500'><Award /></span>
                 <span className="text-sm ml-2 font-medium textgreen">
                   Premium Quality Rice
                 </span>
@@ -26,7 +26,7 @@ export default function Hero() {
               <div className="inline-flex items-center px-5 py-1 bg-blue-100 rounded-full shadow-md border border-[#464DB2]">
                 <span className='text-[#464DB2]'><Globe /> </span>
                 <span className="text-sm  ml-2 font-medium text-[#464DB2]">
-    
+
                   Global Export
                 </span>
               </div>
@@ -45,8 +45,8 @@ export default function Hero() {
                 <span className="lobster-regular text-[#7A2E45]"> Rice </span>
               </h1>
 
-              <p className="text-lg sm:text-xl lg:text-[18px] text-gray-700 max-w-2xl leading-relaxed">
-                The world's leading supplier of quality rice
+              <p className="font-[Poppins] text-lg sm:text-xl lg:text-[20px] text-gray-700 max-w-2xl leading-relaxed">
+                From our fields to tables across the globe, we are committed to providing premium quality rice that reflects trust, consistency, and unmatched taste in every serving.
               </p>
             </div>
 
@@ -58,12 +58,12 @@ export default function Hero() {
             </div>
 
             {/* Statistics */}
-            <div className="grid grid-cols-3 gap-4 sm:gap-8 pt-8 sm:pt-12">
+            {/* <div className="grid grid-cols-3 gap-4 sm:gap-8 pt-8 sm:pt-12">
               <div className="text-center lg:text-left">
                 <div className="text-3xl sm:text-4xl lg:text-5xl font-bold textgreen mb-2">
                   25+
-                </div>
-                <div className="text-xs sm:text-sm text-black font-medium">
+                </div> */}
+            {/* <div className="text-xs sm:text-sm text-black font-medium">
                   Countries Served
                 </div>
               </div>
@@ -83,13 +83,13 @@ export default function Hero() {
                   Years Experience
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-          
-            <div className="order-1  lg:order-2 relative h-full flex items-center justify-center">
 
-             <div className="absolute  top-2 right-2 sm:top-4 sm:right-4 lg:top-8 lg:right-8 xl:top-12 xl:right-12 z-30">
-             
+          <div className="order-1  lg:order-2 relative h-full flex items-center justify-center">
+
+            <div className="absolute  top-2 right-2 sm:top-4 sm:right-4 lg:top-8 lg:right-8 xl:top-12 xl:right-12 z-30">
+
             </div>
             {/* Hero Product Image */}
             <div className="relative flex justify-center lg:justify-end mt-12 lg:mt-0">
@@ -106,8 +106,8 @@ export default function Hero() {
               </div>
             </div>
 
-            
-               <div className="absolute bottom-2 left-2 sm:bottom-1 sm:left-6 lg:bottom-8 lg:left-0 xl:bottom-12 xl:left-4 z-30">
+
+            <div className="absolute bottom-2 left-2 sm:bottom-1 sm:left-6 lg:bottom-8 lg:left-0 xl:bottom-12 xl:left-4 z-30">
               <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg sm:shadow-gray-400 p-3 sm:p-4 lg:p-6 border border-gray-300 max-w-[140px] sm:max-w-[160px] lg:max-w-[140px] ">
                 <div className="flex items-center justify-center">
                   <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24">
