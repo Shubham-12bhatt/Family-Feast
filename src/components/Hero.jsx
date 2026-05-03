@@ -96,7 +96,7 @@ export default function Hero() {
               <img
                 src={heroImg}
                 alt="Premium Rice Products - Family Feast Basmati Rice"
-                className="w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[600px] h-auto drop-shadow-2xl relative z-10 rounded-3xl object-contain"
+                className="w-full max-w-[350px] sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[600px] h-auto drop-shadow-2xl relative z-10 rounded-3xl object-contain"
               />
 
               {/* Decorative background circles */}
