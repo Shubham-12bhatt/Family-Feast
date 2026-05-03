@@ -1,39 +1,39 @@
 import React from 'react';
-import welcomeImage from '../assets/welcome_food_collage.png'; // Will be generated
+import welcomeImage from '../assets/WelcomeImg.png';
 
 const Welcome = () => {
   return (
     <section className="container mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
-      {/* Image Side */}
-      <div className="relative">
-        <div className="grid grid-cols-2 gap-4">
-          <img src={welcomeImage} alt="Delicious Dish" className="rounded-2xl shadow-xl w-full h-64 object-cover transform translate-y-8" />
-          <img src={welcomeImage} alt="Delicious Dish" className="rounded-2xl shadow-xl w-full h-64 object-cover transform -translate-y-8" />
-        </div>
-        {/* Decor element */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-secondary opacity-20 blur-3xl rounded-full"></div>
-      </div>
-
-      {/* Text Side */}
-      <div className="space-y-6">
-        <div className="inline-block border-b-2 border-secondary pb-1">
-          <span className="text-secondary font-family-miniver tracking-widest uppercase text-sm">Home</span>
-        </div>
-        <h2 className="text-2xl md:text-2xl font-poppins font-semibold text-primary">
-          Welcome At Family Feast
-        </h2>
-
-        <ul className="space-y-4 text-gray-600 leading-relaxed">
-          <li className="flex gap-3">
-            <span className="text-secondary text-xl">•</span>
-            <p>Authentic locally sourcing premium crops suitable for export with decades of experience we maintain social processing, packaging ensuring only the quality grains reach your plate effortlessly.</p>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-secondary text-xl">•</span>
-            <p>From farm to folk we ensure the natural nourishment is kept intact making every grain pure.</p>
-          </li>
-        </ul>
-      </div>
+       {/* Image Side */}
+       <div className="relative flex justify-center">
+          <img 
+            src={welcomeImage} 
+            alt="Family Feast Welcome" 
+            className="rounded-3xl w-full max-w-xl object-cover" 
+          />
+       </div>
+       
+       {/* Text Side */}
+       <div className="space-y-3">
+          <div className="flex items-center gap-4">
+            <span className="miniver text-3xl text-[#7A2E45]">Home</span>
+          {/* <div className="h-[2px] w-12 bg-[#7A2E45]"></div> */}
+          <span className="w-12 font-bold text-[#7A2E45]">_______</span>
+          </div>
+          
+          <h2 className="text-3xl md:text-4xl font-poppins font-bold text-[#7A2E45]">
+            Welcome At Family Feast
+          </h2>
+          
+          <div className="mt-10 space-y-6 text-gray-700 leading-relaxed font-poppins text-lg">
+            <p>
+              At Family Feast, rice is more than a staple—it’s a legacy. With decades of experience and a deep-rooted passion for quality, we bring you the finest rice varieties, carefully sourced and expertly processed to meet global standards.
+            </p>
+            <p>
+              From field to fork, every grain reflects our commitment to purity, consistency, and taste—making Family Feast a trusted name across households and international markets.
+            </p>
+          </div>
+       </div>
     </section>
   );
 };

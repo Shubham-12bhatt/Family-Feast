@@ -8,7 +8,7 @@ import Products from './components/Products';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FeatureSection from './components/FeatureSection';
-
+import './index.css';
 function App() {
   return (
     <div className="font-sans antialiased text-gray-900 bg-white selection:bg-secondary selection:text-white">

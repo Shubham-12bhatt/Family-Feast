@@ -1,5 +1,5 @@
 import { Award ,Globe,Shield} from 'lucide-react';
-
+import heroImg from '../assets/Hero Section Image.png';
 
 
 export default function Hero() {
@@ -104,7 +104,7 @@ export default function Hero() {
             {/* Hero Product Image */}
             <div className="relative">
               <img
-                src="images/hero.jpg"
+                src={heroImg}
                 alt="Premium Rice Products - Family Feast Basmati Rice"
                 className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl h-100 drop-shadow-2xl relative z-10 rounded-3xl"
               />

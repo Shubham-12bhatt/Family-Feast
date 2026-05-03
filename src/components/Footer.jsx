@@ -11,11 +11,11 @@ import { MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white pt-16 pb-8 border-t border-white/10">
+    <footer className="bg-primary text-white pt-16 pb-8 px-16 border-t border-white/10">
       <div className="container mx-auto px-6 grid md:grid-cols-4 gap-5 mb-12">
         <div className="space-y-4">
           <h3 className="text-3xl font-poppins font-bold italic text-white">Family Feast</h3>
-          <p className="text-white text-sm leading-relaxed">
+          <p className="text-white font-poppins text-sm leading-relaxed">
             Leading rice exporter committed to quality, sustainability, and customer satisfaction.
           </p>
           <div className="flex gap-4 pt-2">
@@ -31,7 +31,7 @@ const Footer = () => {
 
         <div>
           <h4 className="text-lg font-bold mb-4 font-poppins ml-8">Quick Links</h4>
-          <ul className="space-y-3 text-white text-sm ml-8">
+          <ul className="space-y-3 font-poppins text-white text-sm ml-8">
             {["Home", "About Us", "Our Products", "Contact Us"].map((item) => (
               <li key={item}>
                 <a
@@ -48,7 +48,7 @@ const Footer = () => {
 
         <div>
           <h4 className="text-lg font-bold mb-4 font-poppins">Products</h4>
-          <ul className="space-y-3 text-white text-sm">
+          <ul className="space-y-3 font-poppins text-white text-sm">
             {["Basmati Premium Rice", "Basmati White Sella", "Basmati Golden Sella"].map((item) => (
               <li key={item}>
                 <a

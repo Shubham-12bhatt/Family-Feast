@@ -34,12 +34,12 @@ function FeatureSection() {
   ];
 
   return (
-    <section className="min-h-screen bg-white py-20 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section className="min-h-screen bg-white py-20 px-6 ">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
           <h2
-  className="font-poppins font-bold text-[32px] leading-8 mb-2"
+  className="font-poppins font-bold text-[50px] mb-2"
   style={{ color: 'var(--color-feature)' }}
 >
   What Sets Us Apart

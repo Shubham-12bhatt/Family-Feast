@@ -3,10 +3,10 @@ import React from 'react';
 const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-secondary-light/30">
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+      <div className="container mx-auto px-20 grid md:grid-cols-2 gap-12">
         <div>
-          <h2 className="text-3xl font-poppins font-bold text-primary mb-6">Feel Free To Contact Us</h2>
-          <p className="text-gray-600 mb-8 max-w-md">
+          <h2 className="text-5xl font-poppins font-bold text-primary mb-6">Feel Free To Contact Us</h2>
+          <p className="text-gray-600 font-poppins mb-8 max-w-md">
             Experience the premium quality of our rice. Reach out to us for bulk orders or any inquiries.
           </p>
 
