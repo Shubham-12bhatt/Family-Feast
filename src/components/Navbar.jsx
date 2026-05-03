@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
-import logo from "../assets/logo.png";   
+import logo from "../assets/newlogo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +13,12 @@ const Navbar = () => {
         <img
           src={logo}
           alt="Family Feast"
-          className="h-10 md:h-14 w-auto"
+          className="h-12 md:h-16 w-auto object-contain rounded-[2px] sm:rounded-1xl shadow-sm"
         />
 
         {/* Mobile Menu Toggle */}
-        <button 
-          className="lg:hidden text-[#7A2E45] focus:outline-none" 
+        <button
+          className="lg:hidden text-[#7A2E45] focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -28,13 +28,13 @@ const Navbar = () => {
         <div className="hidden lg:flex ml-auto items-center gap-8">
 
           {/* MENU */}
-          <div className="flex items-center gap-12 xl:gap-24 text-[15.5px] font-semibold leading-none text-black">
+          <div className="flex items-center gap-6 lg:gap-10 xl:gap-14 text-lg xl:text-xl font-semibold leading-none text-black">
 
             <a
               href="#home"
               className="flex items-center gap-[2px] hover:text-[#7A2E45] transition"
             >
-              Home <ChevronDown size={14} />
+              Home <ChevronDown size={18} />
             </a>
 
             <a
@@ -48,14 +48,14 @@ const Navbar = () => {
               href="#products"
               className="flex items-center gap-[10px] hover:text-[#7A2E45] transition"
             >
-              Basmati Product <ChevronDown size={14} />
+              Basmati Product <ChevronDown size={18} />
             </a>
           </div>
 
           {/* BUTTON */}
           <a
             href="#contact"
-            className="bg-[#7A2E45] text-white px-7 py-[10px] rounded-full text-[15px] font-[600] hover:opacity-90 transition whitespace-nowrap"
+            className="bg-[#7A2E45] text-white px-8 py-3 rounded-full text-lg xl:text-xl font-[600] hover:opacity-90 transition whitespace-nowrap"
           >
             Contact Us
           </a>

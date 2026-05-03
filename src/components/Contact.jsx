@@ -25,14 +25,14 @@ const Contact = () => {
         </div>
 
         <div className="rounded-2xl overflow-hidden shadow-lg h-96 md:h-auto bg-gray-300 relative">
-          {/* Map Placeholder */}
-          <div className="absolute inset-0 bg-[url('https://maps.googleapis.com/maps/api/staticmap?center=Ahmedabad&zoom=13&size=600x600&sensor=false')] bg-cover bg-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500"></div>
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="bg-white p-4 rounded-lg shadow-lg">
-              <p className="font-bold text-primary">Family Feast HQ</p>
-              <p className="text-xs text-gray-500">Ahmedabad, India</p>
-            </div>
-          </div>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.723514860424!2d144.7061403!3d-37.7261672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6f4a2f2bc678b%3A0x6b81cc530c632aee!2s58%20Curtin%20Dr%2C%20Deanside%20VIC%203335%2C%20Australia!5e0!3m2!1sen!2sin!4v1777826667756!5m2!1sen!2sin" 
+            className="w-full h-full min-h-[400px]" 
+            style={{ border: 0 }} 
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
     </section>
