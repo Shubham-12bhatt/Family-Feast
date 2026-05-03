@@ -23,7 +23,7 @@ export default function OurProducts() {
       </h2>
 
       {/* Products Grid */}
-      <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 place-items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-2 place-items-center">
         {products.map((product, index) => (
           <div
             key={index}
@@ -31,9 +31,9 @@ export default function OurProducts() {
               relative bg-white 
               rounded-[32px] 
               shadow-lg 
-              px-10 pt-10 pb-8 
+              px-6 sm:px-10 pt-10 pb-8 
               text-center 
-              w-[320px]
+              w-full max-w-[320px]
             "
           >
             {/* Heart Corner */}
@@ -45,7 +45,7 @@ export default function OurProducts() {
             <img
               src={product.image}
               alt={product.name}
-              className="w-48 h-48 mx-auto"
+              className="w-40 h-40 sm:w-48 sm:h-48 mx-auto object-contain"
             />
 
             {/* Title */}

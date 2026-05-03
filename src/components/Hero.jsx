@@ -4,7 +4,7 @@ import heroImg from '../assets/Hero Section Image.png';
 
 export default function Hero() {
   return (
-    <div className="min-h-screen relative overflow-hidden max-w-[1390px] mx-auto ">
+    <div className="min-h-[700px] relative overflow-hidden max-w-[1390px] mx-auto ">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 right-20 w-96 h-96 bg-green-200 rounded-full blur-3xl"></div>
@@ -34,7 +34,7 @@ export default function Hero() {
 
             {/* Main Heading */}
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl  font-[700] leading-tight white lg:whitespace-nowrap">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight white lg:whitespace-nowrap">
                 <span className="rubik">365 </span>
                 <span className="rubik">Days</span>
                 <span className="rubik"> Of </span>
@@ -89,30 +89,20 @@ export default function Hero() {
             <div className="order-1  lg:order-2 relative h-full flex items-center justify-center">
 
              <div className="absolute  top-2 right-2 sm:top-4 sm:right-4 lg:top-8 lg:right-8 xl:top-12 xl:right-12 z-30">
-              {/* <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg sm:shadow-gray-300 px-3 py-2 sm:px-4 sm:py-2 lg:px-6 lg:py-[6px] border border-gray-200">
-                <div className="flex items-center space-x-2 sm:space-x-3">
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 bg-green-100 rounded-full flex items-center justify-center">
-                    <Award className=" sm:w-4 sm:h-4 lg:w-6 lg:h-6 textgreen" />
-                  </div>
-                  <div>
-                    <div className="text-xs sm:text-sm lg:text-sm font-bold text-gray-800">ISO Certified</div>
-                    <div className="text-xs sm:text-xs lg:text-xs text-gray-500">Export Quality</div>
-                  </div>
-                </div>
-              </div> */}
+             
             </div>
             {/* Hero Product Image */}
-            <div className="relative">
+            <div className="relative flex justify-center lg:justify-end mt-12 lg:mt-0">
               <img
                 src={heroImg}
                 alt="Premium Rice Products - Family Feast Basmati Rice"
-                className="w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl h-100 drop-shadow-2xl relative z-10 rounded-3xl"
+                className="w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[600px] h-auto drop-shadow-2xl relative z-10 rounded-3xl object-contain"
               />
 
               {/* Decorative background circles */}
-              <div className="absolute inset-0 -z-10">
-                <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-green-200/40 to-transparent rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
-                <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 bg-gradient-to-br from-blue-100/30 to-transparent rounded-full absolute top-10 sm:top-20 right-10 sm:right-20"></div>
+              <div className="absolute inset-0 -z-10 flex items-center justify-center lg:justify-end">
+                <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-green-200/40 to-transparent rounded-full absolute top-1/2 left-1/2 lg:left-auto lg:right-20 transform -translate-x-1/2 lg:translate-x-0 -translate-y-1/2 animate-pulse"></div>
+                <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 bg-gradient-to-br from-blue-100/30 to-transparent rounded-full absolute top-10 sm:top-20 right-10 sm:right-20 lg:right-0"></div>
               </div>
             </div>
 

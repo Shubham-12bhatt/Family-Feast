@@ -1,40 +1,47 @@
 import React from 'react';
-import aboutImage from '../assets/grilled_fish_plate.png'; // Will be generated
+import aboutImage from '../assets/About Us Image.png';
 
 const About = () => {
   return (
-    <section id="about" className="bg-primary text-white py-20 relative overflow-hidden">
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8 relative z-10">
-          <div>
-            <span className="font-serif italic text-secondary text-2xl">About Us</span>
-            <h2 className="text-4xl font-serif mt-2">Why Family Feast?</h2>
-          </div>
-          
-          <ul className="space-y-6">
-            <li className="flex gap-4">
-              <span className="w-2 h-2 mt-2 bg-secondary rounded-full flex-shrink-0"></span>
-              <p className="text-gray-200 leading-relaxed">
-                Family-backed heritage since purpose – we deliver premium-quality rice with consistency, reliability, and global standards at its core.
-              </p>
-            </li>
-            <li className="flex gap-4">
-               <span className="w-2 h-2 mt-2 bg-secondary rounded-full flex-shrink-0"></span>
-               <p className="text-gray-200 leading-relaxed">
-                 Through modern processing and strict quality control, we ensure every grain meets the expectation of our families and consumers worldwide.
-               </p>
-            </li>
-          </ul>
-        </div>
-        
-        <div className="relative z-10">
-           <div className="absolute inset-0 bg-secondary/10 rounded-3xl transform rotate-3 scale-105"></div>
-           <img src={aboutImage} alt="About Family Feast" className="rounded-3xl shadow-2xl w-full object-cover transform -rotate-3 hover:rotate-0 transition-transform duration-500" />
+    <section id="about" className="bg-[#7A2E45] text-white relative overflow-hidden flex items-center justify-center w-full lg:w-[95%] xl:w-[1370px] lg:rounded-tr-[50px] lg:rounded-br-[50px] mr-auto">
+      <div className="container mx-auto px-6 py-12">
+        <div className="bg-[#7A2E45] p-4 md:p-8 lg:p-16 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+            {/* Left Column: Text */}
+            <div className="space-y-5 mb-8 lg:mb-16">
+              <div className="flex items-center gap-4">
+                <span className="miniver text-3xl font-normal tracking-wide italic">About Us</span>
+                 <span className="w-12 font-bold text-white">_______</span>
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl font-bold font-poppins">Why Family Feast ?</h2>
+              
+              <ul className="space-y-6 mt-10 md:mt-14">
+                <li className="flex gap-3 items-start">
+                  <span className="mt-2 w-1.5 h-1.5 bg-white rounded-full shrink-0"></span>
+                  <p className="text-white/90 text-lg md:text-2xl leading-relaxed font-poppins">
+                    Family Feast is driven by a clear purpose — to deliver premium-quality rice with consistency, reliability, and global standards at its core.
+                  </p>
+                </li>
+                <li className="flex gap-3 items-start">
+                   <span className="mt-2 w-1.5 h-1.5 bg-white rounded-full shrink-0"></span>
+                   <p className="text-white/90 text-lg md:text-2xl leading-relaxed font-poppins">
+                     Through modern processing and strict quality control, we ensure every grain meets the expectations of both families and international markets.
+                   </p>
+                </li>
+              </ul>
+            </div>
+            
+            {/* Right Column: Image */}
+            <div className="relative">
+               <img 
+                src={aboutImage} 
+                alt="About Family Feast" 
+                className="rounded-[30px] md:rounded-[40px] shadow-lg w-full object-cover h-[300px] sm:h-[400px] md:h-[450px]" 
+               />
+            </div>
         </div>
       </div>
       
-      {/* Background Pattern */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-white/5 skew-x-12 transform origin-top-right"></div>
     </section>
   );
 };

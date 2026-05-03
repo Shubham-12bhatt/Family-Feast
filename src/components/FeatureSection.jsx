@@ -1,31 +1,34 @@
-import { Sprout, Settings, Award, Shield } from 'lucide-react';
+import Icon1 from '../assets/Icon1.png';
+import Icon2 from '../assets/Icon2.png';
+import Icon3 from '../assets/Icon3.png';
+import Icon4 from '../assets/Icon4.png';
 import FlipCard from './FlipCard';
 
 function FeatureSection() {
   const cards = [
     {
-      icon: <Sprout size={56} strokeWidth={1.5} />,
+      icon: <img src={Icon1} alt="Farm-Fresh Sourcing" className="w-14 h-14 object-contain" />,
       title: 'Farm-Fresh Sourcing',
       description: 'Carefully selected paddy from trusted farms',
       backImage:
         'https://images.pexels.com/photos/2252618/pexels-photo-2252618.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      icon: <Settings size={56} strokeWidth={1.5} />,
+      icon: <img src={Icon2} alt="Advanced Processing" className="w-14 h-14 object-contain" />,
       title: 'Advanced Processing',
       description: 'Modern techniques to preserve taste and aroma',
       backImage:
         'https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      icon: <Award size={56} strokeWidth={1.5} />,
+      icon: <img src={Icon3} alt="Premium Quality" className="w-14 h-14 object-contain" />,
       title: 'Premium Quality',
       description: 'Strict checks meeting international standards',
       backImage:
         'https://images.pexels.com/photos/1094117/pexels-photo-1094117.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      icon: <Shield size={56} strokeWidth={1.5} />,
+      icon: <img src={Icon4} alt="Global Trust & Reach" className="w-14 h-14 object-contain" />,
       title: 'Global Trust & Reach',
       description: 'Reliably serving partners across the world',
       backImage:
@@ -39,7 +42,7 @@ function FeatureSection() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2
-  className="font-poppins font-bold text-[50px] mb-2"
+  className="font-poppins font-bold text-3xl md:text-[50px] mb-2 leading-tight md:leading-normal"
   style={{ color: 'var(--color-feature)' }}
 >
   What Sets Us Apart
