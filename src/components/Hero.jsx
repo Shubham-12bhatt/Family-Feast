@@ -47,7 +47,7 @@ export default function Hero() {
 
             {/* CTA Button */}
             <div className="pt-4">
-              <a href="#products" className="inline-block bg-[#7A2E45] text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 cursor-pointer">
+              <a href="#products" className="inline-block bg-[#7A2E45] text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-poppins font-semibold text-base sm:text-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 cursor-pointer">
                 Explore our Products
               </a>
             </div>
@@ -65,35 +65,36 @@ export default function Hero() {
 
               {/* Quality Assured Card locked to the image */}
               <div className="absolute -bottom-6 left-2 sm:-left-6 lg:-left-8 z-30">
-                <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-3 sm:p-4 lg:p-5 border border-gray-100 max-w-[120px] sm:max-w-[150px]">
-                  <div className="flex items-center justify-center">
-                    <div className="relative w-12 h-12 sm:w-16 lg:w-20">
-                      {/* Progress Ring */}
-                      <svg
-                        className="w-full h-full transform -rotate-90"
-                        viewBox="0 0 100 100"
-                      >
-                        <circle cx="50" cy="50" r="40" stroke="#e5e7eb" strokeWidth="6" fill="none" />
-                        <circle
-                          cx="50"
-                          cy="50"
-                          r="40"
-                          stroke="#286306"
-                          strokeWidth="6"
-                          fill="none"
-                          strokeDasharray={`${2 * Math.PI * 40 * 0.85} ${2 * Math.PI * 40 * 0.15}`}
-                          strokeLinecap="round"
-                        />
-                      </svg>
-                      {/* Center content */}
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-xs sm:text-sm lg:text-lg font-bold text-gray-800">99%</span>
-                      </div>
+                <div className="bg-white rounded-[24px] shadow-[0_12px_32px_rgba(0,0,0,0.08)] p-5 sm:p-6 border border-gray-200 flex flex-col items-center justify-center max-w-[135px] sm:max-w-[170px] transition-transform duration-300 hover:scale-105">
+                  <div className="relative w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
+                    {/* Progress Ring */}
+                    <svg
+                      className="w-full h-full transform -rotate-90"
+                      viewBox="0 0 100 100"
+                    >
+                      {/* Lilac-tinted background circle */}
+                      <circle cx="50" cy="50" r="38" stroke="#F1EAEF" strokeWidth="7" fill="none" />
+                      {/* Theme color primary progress circle with 82% progress for visual gap */}
+                      <circle
+                        cx="50"
+                        cy="50"
+                        r="38"
+                        stroke="#7A2E45"
+                        strokeWidth="7"
+                        fill="none"
+                        strokeDasharray={`${2 * Math.PI * 38}`}
+                        strokeDashoffset={`${2 * Math.PI * 38 * (1 - 0.82)}`}
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                    {/* Center content */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="text-base sm:text-[20px] font-extrabold text-[#1E293B] font-poppins">99%</span>
                     </div>
                   </div>
-                  <div className="text-center mt-2">
-                    <div className="text-[10px] sm:text-xs lg:text-sm font-bold text-gray-800">Quality</div>
-                    <div className="text-[10px] sm:text-xs lg:text-sm font-bold text-gray-800">Assured</div>
+                  <div className="text-center mt-3.5">
+                    <div className="text-xs sm:text-sm font-bold text-gray-800 font-poppins leading-tight">Quality</div>
+                    <div className="text-xs sm:text-sm font-bold text-gray-800 font-poppins leading-tight">Assured</div>
                   </div>
                 </div>
               </div>

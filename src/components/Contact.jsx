@@ -18,7 +18,7 @@ const Contact = () => {
             <input type="text" placeholder="Subject" className="w-full bg-gray-200 border-none p-4 rounded-md focus:ring-2 focus:ring-primary outline-none placeholder-gray-500" />
             <textarea placeholder="Message" rows="4" className="w-full bg-gray-200 border-none p-4 rounded-md focus:ring-2 focus:ring-primary outline-none placeholder-gray-500"></textarea>
 
-            <button type="submit" className="bg-primary text-white  px-8 py-2 rounded-2xl font-semibold hover:bg-opacity-90 transition-shadow shadow-lg shadow-primary/30 cursor-pointer">
+            <button type="submit" className="bg-primary text-white px-8 py-2 rounded-2xl font-poppins font-semibold hover:bg-opacity-90 transition-shadow shadow-lg shadow-primary/30 cursor-pointer">
               Send
             </button>
           </form>
