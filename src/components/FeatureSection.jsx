@@ -37,7 +37,7 @@ function FeatureSection() {
   ];
 
   return (
-    <section className="bg-white py-16 md:py-20 lg:py-24 px-6 ">
+    <section className="bg-white pt-8 md:pt-10 lg:pt-12 pb-16 md:pb-20 lg:pb-24 px-6 ">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">

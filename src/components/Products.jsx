@@ -42,7 +42,7 @@ export default function OurProducts() {
   return (
     <section
       id="products"
-      className="py-16 md:py-20 lg:py-24 bg-[#F9F5EF] relative overflow-hidden"
+      className="pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-10 lg:pb-12 bg-[#F9F5EF] relative overflow-hidden"
     >
       <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-16">
         {/* Section Heading */}

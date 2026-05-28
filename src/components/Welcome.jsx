@@ -3,7 +3,7 @@ import welcomeImage from '../assets/Homepage.jpeg';
 
 const Welcome = () => {
   return (
-    <section className="container mx-auto px-6 py-16 md:py-20 lg:py-24 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+    <section className="container mx-auto px-6 pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-10 lg:pb-12 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
        {/* Image Side */}
        <div className="relative flex justify-center">
           <img 
