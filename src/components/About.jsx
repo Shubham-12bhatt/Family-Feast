@@ -23,7 +23,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="relative overflow-hidden w-full bg-[#7A2E45] text-white py-20 lg:py-24 flex items-center justify-center">
+    <section id="about" className="relative overflow-hidden w-full bg-[#7A2E45] text-white py-16 md:py-20 lg:py-24 flex items-center justify-center">
       {/* Background Decorative Glows */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-[#E8D5E7]/10 rounded-full blur-3xl pointer-events-none"></div>
 

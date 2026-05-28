@@ -42,29 +42,26 @@ export default function OurProducts() {
   return (
     <section
       id="products"
-      className="py-35 bg-[#F9F5EF] relative overflow-hidden"
+      className="py-16 md:py-20 lg:py-24 bg-[#F9F5EF] relative overflow-hidden"
     >
       <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-16">
         {/* Section Heading */}
-        <div className="flex flex-col items-center mb-16">
-          {/* <div className="flex items-center gap-3 mb-2">
-            <span className="miniver text-5xl text-[#7A2E45]">Our Products</span>
-            <span className="w-12 h-[2px] bg-[#C5A065]"></span>
-          </div> */}
+        <div className="flex flex-col items-center mb-12 sm:mb-16">
           <h2 className="text-4xl md:text-5xl font-poppins font-bold text-[#7A2E45] text-center">
             Our Products
           </h2>
         </div>
 
         {/* Carousel Container */}
-        <div className="relative px-10 sm:px-14">
+        <div className="relative px-6 sm:px-14">
           {/* Left Arrow Button */}
           <button
             onClick={handlePrev}
-            className="absolute left-0 sm:left-2 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-[#7A2E45] text-[#7A2E45] hover:text-white w-12 h-12 rounded-full shadow-lg border border-gray-100 flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95"
+            className="absolute left-0 sm:left-2 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-[#7A2E45] text-[#7A2E45] hover:text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-md border border-gray-100 flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95"
             aria-label="Previous products"
           >
-            <ChevronLeft size={24} />
+            <ChevronLeft size={20} className="sm:hidden" />
+            <ChevronLeft size={24} className="hidden sm:block" />
           </button>
 
           {/* Slider Wrapper */}
@@ -81,10 +78,10 @@ export default function OurProducts() {
                   className="flex-shrink-0 px-2 w-full"
                   style={{ width: `${100 / itemsPerView}%` }}
                 >
-                  {/* Card design */}
-                  <div className="mx-auto bg-white rounded-[32px] shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col h-[500px] w-[380px] max-w-full overflow-hidden border gap-1 border-gray-100/50">
+                  {/* Card design - responsive heights and widths */}
+                  <div className="mx-auto bg-white rounded-[32px] shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col h-auto min-h-[480px] sm:min-h-[520px] md:h-[500px] w-full max-w-[360px] sm:max-w-[380px] overflow-hidden border gap-1 border-gray-100/50">
                     {/* Product Image */}
-                    <div className="relative h-64 w-full overflow-hidden bg-gray-50 shrink-0">
+                    <div className="relative h-48 sm:h-56 md:h-64 w-full overflow-hidden bg-gray-50 shrink-0">
                       <img
                         src={product.image}
                         alt={product.title}
@@ -96,9 +93,9 @@ export default function OurProducts() {
                     </div>
 
                     {/* Product Details */}
-                    <div className="p-7 flex flex-col flex-grow justify-between">
-                      <div className="space-y-4">
-                        <h3 className="text-xl font-bold font-poppins text-black hover:text-[#7A2E45] transition-colors duration-300">
+                    <div className="p-6 sm:p-7 flex flex-col flex-grow justify-between">
+                      <div className="space-y-3 sm:space-y-4">
+                        <h3 className="text-lg sm:text-xl font-bold font-poppins text-black hover:text-[#7A2E45] transition-colors duration-300">
                           {product.title}
                         </h3>
                         <p className="text-gray-600 font-poppins text-sm leading-relaxed">
@@ -115,15 +112,16 @@ export default function OurProducts() {
           {/* Right Arrow Button */}
           <button
             onClick={handleNext}
-            className="absolute right-0 sm:right-2 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-[#7A2E45] text-[#7A2E45] hover:text-white w-12 h-12 rounded-full shadow-lg border border-gray-100 flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95"
+            className="absolute right-0 sm:right-2 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-[#7A2E45] text-[#7A2E45] hover:text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-md border border-gray-100 flex items-center justify-center transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95"
             aria-label="Next products"
           >
-            <ChevronRight size={24} />
+            <ChevronRight size={20} className="sm:hidden" />
+            <ChevronRight size={24} className="hidden sm:block" />
           </button>
         </div>
 
         {/* Dots Pagination */}
-        <div className="flex justify-center gap-2.5 mt-10">
+        <div className="flex justify-center gap-2.5 mt-6 sm:mt-10">
           {Array.from({ length: maxIndex + 1 }).map((_, index) => (
             <button
               key={index}

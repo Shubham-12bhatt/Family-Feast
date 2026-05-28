@@ -15,10 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <Welcome />
-      {/* <Features /> */}
-      <div className="min-h-screen">
       <FeatureSection />
-    </div>
       <About />
       <Products />
       <Contact />
