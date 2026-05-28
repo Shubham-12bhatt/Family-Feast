@@ -32,9 +32,9 @@ const Navbar = () => {
 
             <a
               href="#home"
-              className="flex items-center gap-[2px] hover:text-[#7A2E45] transition"
+              className="hover:text-[#7A2E45] transition"
             >
-              Home <ChevronDown size={18} />
+              Home
             </a>
 
             <a
@@ -66,8 +66,8 @@ const Navbar = () => {
       {/* MOBILE MENU */}
       {isOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-gray-100 flex flex-col py-6 px-6 gap-6 z-50">
-          <a href="#home" className="text-lg font-semibold text-black hover:text-[#7A2E45] flex justify-between items-center" onClick={() => setIsOpen(false)}>
-            Home <ChevronDown size={16} className="text-gray-400" />
+          <a href="#home" className="text-lg font-semibold text-black hover:text-[#7A2E45]" onClick={() => setIsOpen(false)}>
+            Home
           </a>
           <div className="w-full h-[1px] bg-gray-100"></div>
           <a href="#about" className="text-lg font-semibold text-black hover:text-[#7A2E45]" onClick={() => setIsOpen(false)}>
