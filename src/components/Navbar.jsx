@@ -13,7 +13,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="Family Feast"
-          className="h-12 md:h-16 w-auto object-contain rounded-[2px] sm:rounded-1xl shadow-sm"
+          className="h-12 md:h-20 w-auto object-contain rounded-[2px] sm:rounded-1xl shadow-sm"
         />
 
         {/* Mobile Menu Toggle */}
