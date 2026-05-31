@@ -91,11 +91,9 @@ export default function Basmati() {
             {/* Right - Image */}
             <div className="flex justify-center items-center">
               <div className="relative group cursor-pointer">
-                <img
-                  src="/images/sample.jpg"
+                <img src="/images/sample.jpg"
                   alt="Hands holding basmati rice grains"
-                  className="w-full max-w-md h-auto rounded-2xl shadow-xl transition-transform duration-500 ease-in-out group-hover:scale-105 group-hover:shadow-2xl"
-                />
+                  className="w-full max-w-md h-auto rounded-2xl shadow-xl transition-transform duration-500 ease-in-out group-hover:scale-105 group-hover:shadow-2xl" loading="lazy" decoding="async" />
 
                 {/* Glowy gradient overlay */}
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#7A2E45] via-[#C5A065] to-[#F9F5EF] opacity-0 transition-opacity duration-500 group-hover:opacity-30 blur-xl -z-20"></div>

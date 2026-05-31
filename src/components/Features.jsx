@@ -27,28 +27,28 @@ const Features = () => {
              title="Farm-Fresh Sourcing" 
              description="Freshness directly from the farms to your plate."
              icon={
-               <img src={Icon1} alt="" className="w-10 h-10 object-contain" />
+               <img src={Icon1} alt="" className="w-10 h-10 object-contain" loading="lazy" decoding="async" />
              }
            />
            <FeatureCard 
              title="Advanced Processing" 
              description="Modern technology to ensure grain perfection."
              icon={
-               <img src={Icon2} alt="" className="w-10 h-10 object-contain" />
+               <img src={Icon2} alt="" className="w-10 h-10 object-contain" loading="lazy" decoding="async" />
              }
            />
            <FeatureCard 
              title="Premium Quality" 
              description="Unmatched taste and texture in every grain."
              icon={
-               <img src={Icon3} alt="" className="w-10 h-10 object-contain" />
+               <img src={Icon3} alt="" className="w-10 h-10 object-contain" loading="lazy" decoding="async" />
              }
            />
            <FeatureCard 
              title="Global Trust" 
              description="Trusted by families across the globe."
              icon={
-               <img src={Icon4} alt="" className="w-10 h-10 object-contain" />
+               <img src={Icon4} alt="" className="w-10 h-10 object-contain" loading="lazy" decoding="async" />
              }
            />
         </div>

@@ -38,11 +38,9 @@ function FlipCard({ icon, title, description, backImage }) {
 
         {/* BACK */}
         <div className="absolute inset-0 backface-hidden rotate-y-180 rounded-[28px] overflow-hidden shadow-xl">
-          <img
-            src={backImage}
+          <img src={backImage}
             alt={title}
-            className="h-full w-full object-cover"
-          />
+            className="h-full w-full object-cover" loading="lazy" decoding="async" />
           <div className="absolute inset-0 bg-black/60 flex items-end p-6">
             <div className="text-white">
               <h3 className="font-poppins text-lg font-bold">{title}</h3>

@@ -61,6 +61,7 @@ export default function Hero() {
                 src={heroImg}
                 alt="Premium Rice Products - Family Feast Basmati Rice"
                 className="w-full h-auto drop-shadow-2xl relative z-10 rounded-3xl object-contain"
+                fetchpriority="high"
               />
 
               {/* Quality Assured Card locked to the image */}

@@ -72,11 +72,9 @@ export default function RS10() {
               >
                 {/* Image with subtle zoom */}
                 <div className="aspect-square overflow-hidden">
-                  <img
-                    src={variety.image}
+                  <img src={variety.image}
                     alt={variety.name}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.02]"
-                  />
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.02]" loading="lazy" decoding="async" />
                 </div>
 
                 {/* Label with matching glow */}
