@@ -77,11 +77,9 @@ export default function PR11() {
                 >
                   {/* Image with subtle zoom - made smaller on mobile */}
                   <div className="aspect-square overflow-hidden w-full">
-                    <img
-                      src={variety.image}
+                    <img src={variety.image}
                       alt={variety.name}
-                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.02]"
-                    />
+                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.02]" loading="lazy" decoding="async" />
                   </div>
 
                   {/* Label with matching glow */}

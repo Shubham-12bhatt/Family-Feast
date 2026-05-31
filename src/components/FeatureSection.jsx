@@ -7,28 +7,28 @@ import FlipCard from './FlipCard';
 function FeatureSection() {
   const cards = [
     {
-      icon: <img src={Icon1} alt="Farm-Fresh Sourcing" className="w-14 h-14 object-contain" />,
+      icon: <img src={Icon1} alt="Farm-Fresh Sourcing" className="w-14 h-14 object-contain" loading="lazy" decoding="async" />,
       title: 'Farm-Fresh Sourcing',
       description: 'Carefully selected paddy from trusted farms',
       backImage:
         'https://images.pexels.com/photos/2252618/pexels-photo-2252618.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      icon: <img src={Icon2} alt="Advanced Processing" className="w-14 h-14 object-contain" />,
+      icon: <img src={Icon2} alt="Advanced Processing" className="w-14 h-14 object-contain" loading="lazy" decoding="async" />,
       title: 'Advanced Processing',
       description: 'Modern techniques to preserve taste and aroma',
       backImage:
         'https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      icon: <img src={Icon3} alt="Premium Quality" className="w-14 h-14 object-contain" />,
+      icon: <img src={Icon3} alt="Premium Quality" className="w-14 h-14 object-contain" loading="lazy" decoding="async" />,
       title: 'Premium Quality',
       description: 'Strict checks meeting international standards',
       backImage:
         'https://images.pexels.com/photos/1094117/pexels-photo-1094117.jpeg?auto=compress&cs=tinysrgb&w=800',
     },
     {
-      icon: <img src={Icon4} alt="Global Trust & Reach" className="w-14 h-14 object-contain" />,
+      icon: <img src={Icon4} alt="Global Trust & Reach" className="w-14 h-14 object-contain" loading="lazy" decoding="async" />,
       title: 'Global Trust & Reach',
       description: 'Reliably serving partners across the world',
       backImage:

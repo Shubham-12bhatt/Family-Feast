@@ -6,11 +6,9 @@ const Welcome = () => {
     <section className="container mx-auto px-6 pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-10 lg:pb-12 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
        {/* Image Side */}
        <div className="relative flex justify-center">
-          <img 
-            src={welcomeImage} 
+          <img src={welcomeImage} 
             alt="Family Feast Welcome" 
-            className="rounded-3xl w-full max-w-xl object-cover" 
-          />
+            className="rounded-3xl w-full max-w-xl object-cover" loading="lazy" decoding="async" />
        </div>
        
        {/* Text Side */}

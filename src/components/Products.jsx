@@ -82,11 +82,10 @@ export default function OurProducts() {
                   <div className="mx-auto bg-white rounded-[32px] shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col h-auto min-h-[480px] sm:min-h-[520px] md:h-[500px] w-full max-w-[360px] sm:max-w-[380px] overflow-hidden border gap-1 border-gray-100/50">
                     {/* Product Image */}
                     <div className="relative h-48 sm:h-56 md:h-64 w-full overflow-hidden bg-gray-50 shrink-0">
-                      <img
-                        src={product.image}
+                      <img src={product.image}
                         alt={product.title}
                         className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-                        onError={(e) => {
+                        onError={(e) = loading="lazy" decoding="async"> {
                           e.target.src = "https://images.pexels.com/photos/4110251/pexels-photo-4110251.jpeg?auto=compress&cs=tinysrgb&w=800";
                         }}
                       />
