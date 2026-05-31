@@ -66,7 +66,7 @@ export default function Hero() {
 
               {/* Quality Assured Card locked to the image */}
               <div className="absolute -bottom-6 left-2 sm:-left-6 lg:-left-8 z-30">
-                <div className="bg-white rounded-[24px] shadow-[0_12px_32px_rgba(0,0,0,0.08)] p-5 sm:p-6 border border-gray-200 flex flex-col items-center justify-center max-w-[135px] sm:max-w-[170px] transition-transform duration-300 hover:scale-105">
+                <div className="bg-white rounded-[24px] shadow-[0_20px_40px_rgba(122,46,69,0.4),_0_10px_20px_rgba(0,0,0,0.15)] hover:shadow-[0_30px_60px_rgba(122,46,69,0.4),_0_15px_30px_rgba(0,0,0,0.25)] p-5 sm:p-6 border border-gray-100 flex flex-col items-center justify-center max-w-[135px] sm:max-w-[170px] transition-all duration-300 hover:scale-105 hover:-translate-y-1">
                   <div className="relative w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center">
                     {/* Progress Ring */}
                     <svg
