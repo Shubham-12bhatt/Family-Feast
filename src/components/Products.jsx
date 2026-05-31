@@ -85,9 +85,11 @@ export default function OurProducts() {
                       <img src={product.image}
                         alt={product.title}
                         className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-                        onError={(e) = loading="lazy" decoding="async"> {
+                        onError={(e) => {
                           e.target.src = "https://images.pexels.com/photos/4110251/pexels-photo-4110251.jpeg?auto=compress&cs=tinysrgb&w=800";
                         }}
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
 
