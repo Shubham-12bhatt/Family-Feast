@@ -138,7 +138,7 @@ const Dropdown = () => {
         onClick={() => setMainOpen(!mainOpen)}
         className="flex items-center gap-[10px] text-black hover:text-[#7A2E45] transition cursor-pointer text-lg xl:text-xl font-semibold leading-none focus:outline-none py-2"
       >
-        Basmati Product 
+         Products 
         <ChevronDown size={18} className={`transition-transform duration-200 ${mainOpen ? 'rotate-180' : ''}`} />
       </button>
 
