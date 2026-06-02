@@ -80,8 +80,8 @@ export default function NonBasmati() {
             {/* Right - Image */}
             <div className="flex justify-center items-center">
               <div className="relative group cursor-pointer">
-                <img src="/images/sample.jpg"
-                  alt="Hands holding basmati rice grains"
+                <img src="/products/rice2.jpg"
+                  alt="Hands holding non-basmati rice grains"
                   className="w-full max-w-md h-auto rounded-2xl shadow-xl transition-transform duration-500 ease-in-out group-hover:scale-105 group-hover:shadow-2xl" loading="lazy" decoding="async" />
 
                 {/* Glowy gradient overlay */}

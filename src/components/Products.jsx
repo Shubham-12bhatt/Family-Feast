@@ -8,13 +8,17 @@ export default function OurProducts() {
 
   useEffect(() => {
     const handleResize = () => {
+      let ipv = 3;
       if (window.innerWidth < 640) {
-        setItemsPerView(1);
+        ipv = 1;
       } else if (window.innerWidth < 1024) {
-        setItemsPerView(2);
+        ipv = 2;
       } else {
-        setItemsPerView(3);
+        ipv = 3;
       }
+      setItemsPerView(ipv);
+      const maxIdx = Math.max(0, TypeRice.length - ipv);
+      setCurrentIndex((prev) => Math.min(prev, maxIdx));
     };
 
     handleResize();
@@ -23,13 +27,6 @@ export default function OurProducts() {
   }, []);
 
   const maxIndex = Math.max(0, TypeRice.length - itemsPerView);
-
-  // Clamp current index if itemsPerView changes
-  useEffect(() => {
-    if (currentIndex > maxIndex) {
-      setCurrentIndex(maxIndex);
-    }
-  }, [itemsPerView, maxIndex, currentIndex]);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? maxIndex : prev - 1));

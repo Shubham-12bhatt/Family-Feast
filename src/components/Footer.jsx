@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Facebook,
   Instagram,
@@ -60,18 +61,21 @@ const Footer = () => {
           <h4 className="text-xl font-bold mb-6 font-poppins border-b-2 border-white/20 pb-2 inline-block">Products</h4>
           <ul className="space-y-4 font-poppins text-white/90 text-md">
             {[
-              { label: "Basmati Premium Rice", href: "#products" },
-              { label: "Basmati White Sella", href: "#products" },
-              { label: "Basmati Golden Sella", href: "#products" }
+              { label: "Indian Basmati Rice", href: "/basmati" },
+              { label: "Indian Non Basmati Rice", href: "/non-basmati" },
+              { label: "Sugandha Rice", href: "/sugandha" },
+              { label: "Sona masuri Rice", href: "/sona-masuri" },
+              { label: "Sharbati Rice", href: "/sharbati" },
+              { label: "Pusa Rice", href: "/pusa" }
             ].map((item) => (
               <li key={item.label} className="group">
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className="flex items-center gap-2 hover:text-white transition-colors duration-300"
                 >
                   <span className="text-white/40 group-hover:text-white group-hover:translate-x-1 transition-all duration-300">&gt;</span>
                   <span className="group-hover:translate-x-1 transition-transform duration-300">{item.label}</span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
